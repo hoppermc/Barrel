@@ -1,0 +1,21 @@
+name: cli
+description: A simple command-line application.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  console: any
+  dio: ^4.0.0
+  toml: ^0.12.0
+  crypto: ^3.0.1
+  archive: ^3.1.2
+  uuid: ^3.0.4
+
+# dependencies:
+#   path: ^1.8.0
+
+dev_dependencies:
+  lints: ^1.0.0
