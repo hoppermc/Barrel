@@ -16,7 +16,7 @@ var dio = Dio();
 var uuids = Uuid();
 
 var spigotVersions = ["1.17.1", "1.16.5", "1.12.2", "1.8.8"]; //Common versions
-var javaVersions = ["16", "15", "8", "8"];
+var javaVersions = ["16", "16", "16", "16"];
 
 var helpMessage =
 """
@@ -66,7 +66,8 @@ Future<void> run(bool dockerized) async {
     if (Platform.isWindows) {
       await runWrappedCmd("start.bat", []);
     } else if (Platform.isLinux) {
-      await runWrappedCmd("start.sh", []);
+      await runCmd("chmod", ["700", "./start.sh"]);
+      await runWrappedCmd("./start.sh", []);
     }
   } else {
     var buildId = uuids.v4().replaceAll("-", "");
@@ -162,7 +163,8 @@ Future<void> init() async {
   if (Platform.isWindows) {
     await runWrappedCmd("start.bat", []);
   } else if (Platform.isLinux) {
-    await runWrappedCmd("start.sh", []);
+    await runCmd("chmod", ["700", "./start.sh"]);
+    await runWrappedCmd("./start.sh", []);
   }
 
   await tempSocket?.close();
@@ -289,6 +291,6 @@ Future<void> runWrappedCmd(String cmd, List<String> args) async {
 Future<int> getLatestPaperBuild(String version) async {
   var response = await dio
       .get("https://papermc.io/api/v2/projects/paper/versions/$version");
-  var latestBuild = (response.data["builds"] as List<dynamic>).first as int;
+  var latestBuild = (response.data["builds"] as List<dynamic>).last as int;
   return latestBuild;
 }
