@@ -24,13 +24,13 @@ docker images for minecraft server primarily for minigames</h4>
         <img alt="version" src="https://img.shields.io/badge/supports-1.17.1-blueviolet"/>
     </a>
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
-        <img alt="version" src="https://img.shields.io/badge/suppots-1.16.5-blueviolet"/>
+        <img alt="version" src="https://img.shields.io/badge/supports-1.16.5-blueviolet"/>
     </a>
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
-        <img alt="version" src="https://img.shields.io/badge/suppots-1.12.2-blueviolet"/>
+        <img alt="version" src="https://img.shields.io/badge/supports-1.12.2-blueviolet"/>
     </a>
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
-        <img alt="version" src="https://img.shields.io/badge/suppots-1.8.8-blueviolet"/>
+        <img alt="version" src="https://img.shields.io/badge/supports-1.8.8-blueviolet"/>
     </a>
 </p>
 <p align="center">
