@@ -1,6 +1,6 @@
 var template =
 """
-FROM openjdk:%JAVA_VERSION%-alpine
+FROM azul/zulu-openjdk-alpine:%JAVA_VERSION%-jre
 LABEL baseimage.author="helightdev@gmail.com"
 LABEL baseimage.src="https://github.com/hoppermc/Hopper"
 LABEL generated.version="%VERSION%"
