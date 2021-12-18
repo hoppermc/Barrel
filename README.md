@@ -21,6 +21,9 @@ docker images for minecraft server primarily for minigames</h4>
 </p>
 <p align="center">
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
+        <img alt="version" src="https://img.shields.io/badge/supports-1.18.1-blueviolet"/>
+    </a>
+    <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
         <img alt="version" src="https://img.shields.io/badge/supports-1.17.1-blueviolet"/>
     </a>
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
