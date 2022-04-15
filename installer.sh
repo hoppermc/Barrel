@@ -7,7 +7,7 @@ then
     echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' | sudo tee /etc/apt/sources.list.d/dart_stable.list
     sudo apt-get update
     sudo apt-get install dart
-    prinf "Setting up environment variables..."
+    printf "Setting up environment variables..."
     export PATH="$PATH:/usr/lib/dart/bin"
     export PATH="$PATH":"$HOME/.pub-cache/bin"
     echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
@@ -20,5 +20,5 @@ then
     sudo apt-get install openjdk-17-jre -y
 fi
 
-prinf "Installing barrel via dart pub..."
+printf "Installing barrel via dart pub..."
 dart pub global activate barrel

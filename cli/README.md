@@ -56,7 +56,7 @@ dart pub global activate barrel
 or use the barrel installer script (for ubuntu & debian) to also install
 dart and java if not already present
 ```bash
-bash <(wget -qO- https://gist.githubusercontent.com/helightdev/3f15a696d66921b1e47d077f3243a96b/raw/d528045acc4c0ec8584ad93a30439725d659c164/installer.sh)
+bash <(wget -qO- https://gist.githubusercontent.com/helightdev/3f15a696d66921b1e47d077f3243a96b/raw/6d4f1fcd3a1e70d084d40235e23c3b86b8fe7825/installer.sh)
 ```
 
 ## Usage

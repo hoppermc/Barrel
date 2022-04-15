@@ -6,3 +6,6 @@
 
 ## 1.0.4
 - Add reference to installer
+
+## 1.0.4+1
+- Update installer url
