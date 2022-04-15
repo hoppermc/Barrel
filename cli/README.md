@@ -5,8 +5,7 @@
 </h1>
 
 <h2 align="center">Barrel CLI</h4>
-<h4 align="center">Utilities for running and creating stateless  
-docker images for minecraft server primarily for minigames</h4>
+<h4 align="center">Utilities for creating and running both stateless and stateful servers in dockerized and non-dockerized environments</h4>
 
 <p align="center">
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
