@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/21/Barrel_%28U%29_JE1_BE1.png/revision/latest?cb=20200224220423" alt="HopperEngine Logo" width="256">
+  <img src="https://camo.githubusercontent.com/7aa45eaab667b13a31d0fbf73e7ecdeb0e8c0369c799b32affd1d6ad6985362d/68747470733a2f2f7374617469632e77696b69612e6e6f636f6f6b69652e6e65742f6d696e6563726166745f67616d6570656469612f696d616765732f322f32312f42617272656c5f253238552532395f4a45315f4245312e706e672f7265766973696f6e2f6c61746573743f63623d3230323030323234323230343233" alt="HopperEngine Logo" width="256">
   <br>
 </h1>
 
@@ -59,13 +59,12 @@ dart and java if not already present
 bash <(wget -qO- https://gist.githubusercontent.com/helightdev/3f15a696d66921b1e47d077f3243a96b/raw/d528045acc4c0ec8584ad93a30439725d659c164/installer.sh)
 ```
 
-
 ## Usage
 barrel < command > [ arguments ]
 
-* **init**        Starts the barrel initializer and creates a runnable environment in the current directory.
-* **run**         Launches the operation system specific startfile.
-  * -d, --dockerized    Performs a docker build and runs the image wrapped.
-* **build**       Wraps a normal docker build command with default values.
-* **pull**        Pulls the server files based on the hopper configuration.
+* **init**        Starts the barrel initializer and creates a runnable environment in the current directory.  
+* **run**         Launches the operation system specific startfile.  
+  * -d, --dockerized    Performs a docker build and runs the image wrapped.  
+* **build**       Wraps a normal docker build command with default values.  
+* **pull**        Pulls the server files based on the hopper configuration.  
 * **doctor**      Snapshots and prints debug details about the current environment and image.  

@@ -20,7 +20,7 @@ var javaVersions =   ["17",     "17",     "16",     "16",     "16",     "16"];
 
 var helpMessage =
 """
-A command-line utility for running and creating dockerized minecraft server images.
+A command-line utility for installing and running minecraft, as well as creating dockerized minecraft-server images.
 
 Usage: barrel <command> [arguments]
     
@@ -32,6 +32,7 @@ barrel:
     build       Wraps a normal docker build command with default values.
     pull        Pulls the server files based on the hopper configuration.
     doctor      Snapshots and prints debug details about the current environment and image.
+      -z, --nozip         Skips the zip working directory step. 
 """;
 
 void writeLine(String s) {
@@ -53,7 +54,7 @@ void main(List<String> arguments) async {
     } else if (arguments.elementAt(0) == "pull") {
       await pull();
     } else if (arguments.elementAt(0) == "doctor") {
-      await doctor();
+      await doctor(arguments.contains("--nozip") || arguments.contains("-z"));
     }
   }
 
@@ -202,7 +203,7 @@ Future<void> installServer(BarrelConfiguration configuration) async {
   }
 }
 
-Future<void> doctor() async {
+Future<void> doctor(bool isNozip) async {
   var working = Directory.current;
   var configFile = File(working.path + "/" + "barrel.toml");
   if (!await configFile.exists()) {
@@ -232,7 +233,10 @@ Future<void> doctor() async {
   writeLine("Flavour: ${barrelConfiguration.flavour}");
   writeLine("Version: ${barrelConfiguration.version}");
   writeLine("Executable SHA256: $executableHash");
+  writeLine("Docker:");
   /* Docker Version */ await runCmd("docker", ["--version"]);
+  writeLine("Java:");
+  /* Java Version */ await runCmd("java", ["--version"]);
   writeLine("========== Dockerfile ==========");
   writeLine(dockerfile.trimRight());
   writeLine("========== End Summary =========");

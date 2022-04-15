@@ -1,21 +1,22 @@
-name: cli
-description: A simple command-line application.
-version: 1.0.3
-# homepage: https://www.example.com
+name: barrel
+description: A command-line utility for installing and running minecraft, as well as creating dockerized minecraft-server images.
+version: 1.0.4
+homepage: https://github.com/hoppermc/Barrel
+repository: https://github.com/hoppermc/Barrel
+
+executables:
+  barrel:
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  console: any
+  console: ^4.1.0
   dio: ^4.0.0
   toml: ^0.12.0
   crypto: ^3.0.1
   archive: ^3.1.2
   uuid: ^3.0.4
-
-# dependencies:
-#   path: ^1.8.0
 
 dev_dependencies:
   lints: ^1.0.0
