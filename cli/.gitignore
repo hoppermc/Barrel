@@ -6,5 +6,5 @@
 build/
 
 # Generated files
-barrel.exe
+bin/barrel
 barrel

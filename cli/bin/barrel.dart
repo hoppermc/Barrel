@@ -15,8 +15,8 @@ import 'startfiles.dart';
 var dio = Dio();
 var uuids = Uuid();
 
-var spigotVersions = ["1.18.2", "1.18.1", "1.17.1", "1.16.5", "1.12.2", "1.8.8"]; //Common versions
-var javaVersions =   ["17",     "17",     "16",     "16",     "16",     "16"];
+var spigotVersions = ["1.19", "1.18.2", "1.18.1", "1.17.1", "1.16.5", "1.12.2", "1.8.8"]; //Common versions
+var javaVersions =   ["17",   "17",     "17",     "16",     "16",     "16",     "16"];
 
 var helpMessage =
 """

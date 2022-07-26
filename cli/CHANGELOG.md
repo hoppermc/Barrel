@@ -12,3 +12,6 @@
 
 ## 1.0.4+2
 - Update Readme
+
+## 1.0.5
+- Add minecraft version 1.19

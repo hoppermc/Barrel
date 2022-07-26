@@ -20,6 +20,9 @@
 </p>
 <p align="center">
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
+        <img alt="version" src="https://img.shields.io/badge/supports-1.19-blueviolet"/>
+    </a>
+    <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
         <img alt="version" src="https://img.shields.io/badge/supports-1.18.2-blueviolet"/>
     </a>
     <a href="https://getbukkit.org/get/RD0y91OTotryPrElNQe4ovBLDNweoO5Z/">
