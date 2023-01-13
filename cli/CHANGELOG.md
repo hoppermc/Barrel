@@ -15,3 +15,6 @@
 
 ## 1.0.5
 - Add minecraft version 1.19
+
+## 1.0.6
+- Add minecraft version 1.19.3

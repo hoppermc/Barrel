@@ -1,6 +1,6 @@
 name: barrel
 description: A command-line utility for installing and running minecraft, as well as creating dockerized minecraft-server images.
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/hoppermc/Barrel
 repository: https://github.com/hoppermc/Barrel
 
